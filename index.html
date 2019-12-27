@@ -6,6 +6,47 @@
         <meta name="description" content="Welcome to my kakao clone">
         <title>This is my title</title>
         <link href="styles.css" rel="stylesheet">
+        <style>
+        body,html{
+            height: 100%;
+            margin: 0;
+            padding:0;
+        }
+        body{
+            height: 400%;
+            background-color: red;
+        }
+        /* position fixed
+        #boxone{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            position: static;
+        }
+        #boxtwo{
+            height: 300px;
+            width: 100%;
+            background-color: green;
+            position: fixed;
+            left: 0px;
+            bottom: 30px;
+        }
+        */
+        .abs-box{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+        .abs-child{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        </style>
     </head>
     <body>
         <section>
@@ -13,7 +54,15 @@
                 <h1>Title of a section</h1>
             </header>
         </section>
-
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+        <!-- position fixed
+        <div id="boxone">
+        <div class="box">1</div></div>
+        <div id="boxtwo">
+        <div class="box-child">1</div></div>
+        -->
         <div>
             <header id="differentHeader" class="defaultHeader">Title of the unknown container</header>
         </div>
