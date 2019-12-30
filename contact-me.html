@@ -40,15 +40,28 @@
                 width: 100px;
                 height: 100px;
                 background-color: red;
-                transition: transform .5s ease-in-out
+                animation: 5s scaleAndRotateSquare infinite ease-in-out
             }
-            .box:hover{
+            @keyframes scaleAndRotateSquare{
+                0%{
+                    transform: none;
+                }
+                50%{
+                    transform: rotate(1turn) scale(.5, .5);
+                    color: white;
+                }
+                100%{
+                    transform: none;
+                    color: blue;
+                }
+            }
+            /* .box:hover{
                 transform: rotate(180deg) scale(.5, .5);
-            }
+            } */
         </style>
     </head>
     <body>
-        <div class="box"></div>
+        <div class="box">hello</div>
         <!-- <span class="box">text</span> -->
         <!-- <div class="father">
             <div class="box">1</div>
