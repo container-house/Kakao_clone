@@ -7,7 +7,7 @@
         <title>Contact Me</title>
         <link href="styles.css" rel="stylesheet">
         <style>
-            html,body{
+            /* html,body{
                 height: 100%;
             }
          .father{
@@ -26,11 +26,31 @@
             display: flex;
             justify-content: center;
             color: white;
+            } */
+            /* .box{
+                background-color: green;
+                color: white;
+                transition: color 1s ease-in-out;
+            }
+            .box:hover{
+                background-color: red;
+                color: blue;
+            } */
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                transition: transform .5s ease-in-out
+            }
+            .box:hover{
+                transform: rotate(180deg) scale(.5, .5);
             }
         </style>
     </head>
     <body>
-        <div class="father">
+        <div class="box"></div>
+        <!-- <span class="box">text</span> -->
+        <!-- <div class="father">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
@@ -41,7 +61,7 @@
             <div class="box">8</div>
             <div class="box">9</div>
             <div class="box">10</div>
-        </div>
+        </div> -->
         <h1>Contact Me Title</h1>
         <a href="test.html">test</a>
     </body>
